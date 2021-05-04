@@ -99,19 +99,6 @@ class _ProfileState extends State<Safety> {
                   height: 1,
                   thickness:1),
 
-              // Card(
-              //   child:ListTile(
-              //     leading: Text('Sanitization frequency',),
-              //     title: TextField(
-              //     style: TextStyle(
-              //       color: Colors.black,
-              //       fontSize: 25,
-              //       fontWeight: FontWeight.bold,
-              //     ),
-              //   ),
-              // ),
-              // ),
-
               ListTile(
                 title: Text(
                   'Other checks',
@@ -151,13 +138,7 @@ class _ProfileState extends State<Safety> {
                       child:   FloatingActionButton(
                         tooltip: 'Increment',
                         child: Icon(Icons.add),
-                        // onPressed: () async {
-                        //   Navigator.of(context).pushReplacement(
-                        //       MaterialPageRoute(
-                        //           builder: (BuildContext context) => Dialogs()
-                        //       )
-                        //   );
-                        // },
+                        // onPressed:
                         backgroundColor: new Color(0xFF00BFA5),
                       ),
                     ),
@@ -173,38 +154,3 @@ class _ProfileState extends State<Safety> {
     );
   }
 }
-
-  Future _asyncInputDialog(BuildContext context) async {
-    String teamName = '';
-    return showDialog(
-      context: context,
-      barrierDismissible: false, // dialog is dismissible with a tap on the barrier
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Enter current team'),
-          content: new Row(
-            children: [
-              new Expanded(
-                  child: new TextField(
-                    autofocus: true,
-                    decoration: new InputDecoration(
-                        labelText: 'Team Name', hintText: 'eg. Juventus F.C.'),
-                    onChanged: (value) {
-                      teamName = value;
-                    },
-                  ))
-            ],
-          ),
-          actions: [
-            FlatButton(
-              child: Text('Ok'),
-              onPressed: () {
-                Navigator.of(context).pop(teamName);
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }
-

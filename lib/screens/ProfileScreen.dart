@@ -399,62 +399,14 @@ class _ImageCaptureState extends State<Profile> {
                           fontSize: 20,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                        )),
+                        )
+                    ),
 
                   ),
                 ),
                 SizedBox(
                   height: 20,
                 ),
-
-                // Container(
-                //   width: 510.0,
-                //   height: 60.0,
-                //   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 1),
-                //
-                //   child: RaisedButton(
-                //     shape: RoundedRectangleBorder(
-                //       borderRadius: BorderRadius.circular(8),
-                //       side: BorderSide(color: Colors.white),
-                //     ),
-                //     color: Colors.teal.withOpacity(0.7),
-                //     padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
-                //
-                //     elevation: 0,
-                //     onPressed: () async {
-                //       // _showlogout();
-                //     },
-                //
-                //     child: Text('Save Changes',
-                //         style: TextStyle(
-                //           fontSize: 20,
-                //           color: Colors.white,
-                //           fontWeight: FontWeight.bold,
-                //         )),
-                //   ),
-                // ),
-
-                // SizedBox(
-                //   width: 390,
-                //   height: 60,
-                //   child: RaisedButton(
-                //     child: Text('Save changes'),
-                //     elevation: 2,
-                //     shape: RoundedRectangleBorder(
-                //         borderRadius: BorderRadius.all(Radius.circular(16.0))),
-                //     textColor: Colors.white,
-                //     onPressed: () {
-                //       Navigator.of(context).pushReplacement(
-                //           MaterialPageRoute(
-                //               builder: (BuildContext context) => Home()
-                //           )
-                //       );
-                //     },
-                //     color: Colors.teal.withOpacity(0.7),
-                //     padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
-                //   ),
-                // )
-
               ],
             ),
           ),
