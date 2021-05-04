@@ -4,21 +4,70 @@ import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import 'package:pin_entry_text_field/pin_entry_text_field.dart';
+import 'package:provider/provider.dart';
 import 'package:safeouts_business/main.dart';
+import 'package:safeouts_business/models/product.dart';
+import 'package:safeouts_business/providers/product_provider.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(MyApp());
 
-}
 class Profile extends StatefulWidget {
+  final Product product;
+
+  Profile([this.product]);
 
   @override
   _ImageCaptureState createState() => _ImageCaptureState();
 }
 
 class _ImageCaptureState extends State<Profile> {
+  final nameController = TextEditingController();
+  final addressController = TextEditingController();
+  final phoneController = TextEditingController();
+  final copController = TextEditingController();
+  final sopController = TextEditingController();
+
+  @override
+  void dispose() {
+    nameController.dispose();
+    addressController.dispose();
+    phoneController.dispose();
+    copController.dispose();
+    sopController.dispose();
+
+    super.dispose();
+  }
+
+  @override
+  void initState() {
+    if (widget.product == null) {
+      //New Record
+      nameController.text = "";
+      addressController.text = "";
+      phoneController.text = "";
+      sopController.text = "";
+      copController.text = "";
+
+      new Future.delayed(Duration.zero, () {
+        final productProvider = Provider.of<ProductProvider>(context,listen: false);
+        productProvider.loadValues(Product());
+      });
+    } else {
+      //Controller Update
+      nameController.text=widget.product.name;
+      addressController.text=widget.product.address;
+      phoneController.text=widget.product.phone.toString();
+      copController.text=widget.product.cop.toString();
+      sopController.text=widget.product.sop.toString();
+      //State Update
+      new Future.delayed(Duration.zero, () {
+        final productProvider = Provider.of<ProductProvider>(context,listen: false);
+        productProvider.loadValues(widget.product);
+      });
+
+    }
+
+    super.initState();
+  }
   var _formKey = GlobalKey<FormState>();
   var isLoading = false;
 
@@ -40,6 +89,9 @@ class _ImageCaptureState extends State<Profile> {
 
   @override
   Widget build(BuildContext context) {
+    final productProvider = Provider.of<ProductProvider>(context);
+
+
     return Scaffold(
       body: Container(
 
@@ -114,10 +166,8 @@ class _ImageCaptureState extends State<Profile> {
                 ),
                 Container(
                   child: TextField(
-
-                    decoration: InputDecoration(
-                      hintText: "Restaurant's name",
-                      border: InputBorder.none,
+                    controller: nameController,
+                    decoration: InputDecoration(hintText: "Restaurant's name", border: InputBorder.none,
 
                       hintStyle: TextStyle(
                           color: Colors.black,
@@ -125,6 +175,9 @@ class _ImageCaptureState extends State<Profile> {
                       ),
                       contentPadding: EdgeInsets.only(left: 10),
                     ),
+                      onChanged: (value) {
+                        productProvider.changeName(value);
+                      },
                     style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.bold),
 
                   ),
@@ -135,10 +188,11 @@ class _ImageCaptureState extends State<Profile> {
                 ),
                 Container(
                   child: TextField(
+                    controller: addressController,
                     keyboardType: TextInputType.multiline,
                     maxLines: null,
-                    onChanged: (String value) {
-                    },
+                    onChanged: (value) => productProvider.changeAddress(value),
+
                     decoration: InputDecoration(
                       hintText: "Restaurant's address",
                       border: InputBorder.none,
@@ -153,8 +207,12 @@ class _ImageCaptureState extends State<Profile> {
                   height: 20,
                 ),
                 TextFormField(
+                  controller: phoneController,
                   maxLines: 1,
                   keyboardType: TextInputType.number,
+                  onChanged: (value) {
+                    productProvider.changePhone(value);
+                  },
                   decoration: InputDecoration(
                     prefixIcon: const Icon(
                       Icons.phone,
@@ -209,11 +267,12 @@ class _ImageCaptureState extends State<Profile> {
                       Expanded
                         (child:
                       TextField(
+                        controller: copController,
                         keyboardType: TextInputType.number,
                         maxLines: null,
-                        onChanged: (String value) {
-                          // food.Pcop = value;
-                        },
+                          onChanged: (value) {
+                            productProvider.changeCop(value);
+                          },
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Add values',
@@ -243,11 +302,13 @@ class _ImageCaptureState extends State<Profile> {
                       ),
 
                       Expanded(child: TextField(
+                        controller: sopController,
+
                         keyboardType: TextInputType.number,
                         maxLines: null,
-                        onChanged: (String value) {
-                          // food.Pcop = value;
-                        },
+                        onChanged: (value) =>
+                            productProvider.changeSop(value),
+
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Add values',
@@ -324,7 +385,9 @@ class _ImageCaptureState extends State<Profile> {
                     padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
                     elevation: 0.0,
                     onPressed: () async {
-                      _submit();
+                      // _submit();
+                      productProvider.saveProduct();
+                      Navigator.of(context).pop();
                       // Navigator.of(context).pushReplacement(
                       //     MaterialPageRoute(
                       //         builder: (BuildContext context) => Home()

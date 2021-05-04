@@ -1,10 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:safeouts_business/screens/splashscreen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
-}
 
+}
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   final ThemeData _theme = _buildTheme();

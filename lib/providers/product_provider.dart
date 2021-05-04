@@ -6,25 +6,19 @@ import 'package:uuid/uuid.dart';
 class ProductProvider with ChangeNotifier {
   final firestoreService = FirestoreService();
   String _name;
-  double _price;
+  String _address;
+  double _phone;
+  double _cop;
+  double _sop;
   String _productId;
-
-  String _restaurantName;
-  String _restaurantAddress;
-  double _restaurantPhone;
-  double _restaurantCop;
-  double _restaurantSop;
   var uuid = Uuid();
 
   //Getters
   String get name => _name;
-  double get price => _price;
-
-  String get restaurantName => _restaurantName;
-  String get restaurantAddress => _restaurantAddress;
-  double get restaurantPhone => _restaurantPhone;
-  double get restaurantCop => _restaurantCop;
-  double get restaurantSop => _restaurantSop;
+  String get address => _address;
+  double get phone => _phone;
+  double get cop => _cop;
+  double get sop => _sop;
 
   //Setters
   changeName(String value) {
@@ -32,32 +26,32 @@ class ProductProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  changePrice(String value) {
-    _price = double.parse(value);
+  changeAddress(String value) {
+    _address = value;
+    notifyListeners();
+  }
+  changePhone(String value) {
+    _phone = double.parse(value);
+    notifyListeners();
+  }
+  changeCop(String value) {
+    _cop = double.parse(value);
+    notifyListeners();
+  }
+  changeSop(String value) {
+    _sop = double.parse(value);
     notifyListeners();
   }
 
-  changeRName(String value) {
-    _restaurantName = value;
-    notifyListeners();
-  }
-  changeRAddress(String value) {
-    _restaurantAddress = value;
-    notifyListeners();
-  }
-  changeRPhone(String value) {
-    _price = double.parse(value);
-    notifyListeners();
-  }
 
   loadValues(Product product){
 
 
-    _restaurantName=product.name;
-    _restaurantAddress=product.address;
-    _restaurantPhone=product.phone;
-    _restaurantCop=product.cop;
-    _restaurantSop=product.sop;
+    _name=product.name;
+    _address=product.address;
+    _phone=product.phone;
+    _cop=product.cop;
+    _sop=product.sop;
   }
 
 
@@ -65,15 +59,14 @@ class ProductProvider with ChangeNotifier {
     print(_productId);
     if (_productId == null) {
       var newProduct = Product(name:
-      restaurantName, address: restaurantAddress,phone:restaurantPhone,
-          cop:restaurantCop,sop:restaurantSop, productId: uuid.v4());
+      name, address: address,phone:phone,
+          cop:cop,sop:sop, productId: uuid.v4());
       firestoreService.saveProduct(newProduct);
     } else {
       //Update
       var updatedProduct =
-      Product(name:
-      restaurantName, address: restaurantAddress,phone:restaurantPhone,
-          cop:restaurantCop,sop:restaurantSop, productId: uuid.v4());
+      Product(name: name, address: address,phone:phone,
+          cop:cop,sop:sop, productId: uuid.v4());
       firestoreService.saveProduct(updatedProduct);
     }
   }
