@@ -1,13 +1,78 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:safeouts_business/models/product.dart';
+import 'package:safeouts_business/providers/product_provider.dart';
 
 
 
 class Home extends StatefulWidget {
+  final Product product;
+
+  Home([this.product]);
+
   @override
   _ProfileState createState() => _ProfileState();
 }
 
 class _ProfileState extends State<Home> {
+  final nameController = TextEditingController();
+  final priceController = TextEditingController();
+
+  final RnameController = TextEditingController();
+  final RaddressController = TextEditingController();
+  final RphoneController = TextEditingController();
+  final RcopController = TextEditingController();
+  final RsopController = TextEditingController();
+
+  @override
+  void dispose() {
+    nameController.dispose();
+    priceController.dispose();
+
+    RnameController.dispose();
+    RaddressController.dispose();
+    RphoneController.dispose();
+    RcopController.dispose();
+    RsopController.dispose();
+
+    super.dispose();
+  }
+
+  @override
+  void initState() {
+    if (widget.product == null) {
+      //New Record
+      nameController.text = "";
+      priceController.text = "";
+
+      RnameController.text = "";
+      RaddressController.text = "";
+      RphoneController.text = "";
+      RsopController.text = "";
+      RcopController.text = "";
+
+      new Future.delayed(Duration.zero, () {
+        final productProvider = Provider.of<ProductProvider>(context,listen: false);
+        productProvider.loadValues(Product());
+      });
+    } else {
+      //Controller Update
+      RnameController.text=widget.product.name;
+      RaddressController.text=widget.product.address;
+      RphoneController.text=widget.product.phone.toString();
+      RcopController.text=widget.product.cop.toString();
+      RsopController.text=widget.product.sop.toString();
+      //State Update
+      new Future.delayed(Duration.zero, () {
+        final productProvider = Provider.of<ProductProvider>(context,listen: false);
+        productProvider.loadValues(widget.product);
+      });
+
+    }
+
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
