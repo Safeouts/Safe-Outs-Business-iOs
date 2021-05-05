@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:launch_review/launch_review.dart';
+import 'package:pdf_flutter/pdf_flutter.dart';
 import 'package:safeouts_business/screens/FirstScreen.dart';
 import 'package:safeouts_business/screens/editProfile.dart';
 import 'package:safeouts_business/screens/notifications.dart';
 import 'package:safeouts_business/screens/splashscreen.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import 'ActivityPdf.dart';
 
 class SettingsPage extends StatefulWidget {
 
@@ -96,11 +99,21 @@ class _SettingsPageState extends State<SettingsPage> {
 
               ),
              ),
+
               Card(
               child:ListTile(
                 onTap: () {
-                  _launchPrivacy();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PDFListBody(),
+                    ),
+                  );
                 },
+                // onTap: () {
+                //
+                //   _launchPrivacy();
+                // },
                 leading: Icon(Icons.lock_outline, color: Colors.teal),
                 title: Text("Privacy"),
               ),
