@@ -1,0 +1,226 @@
+{
+  "project_info": {
+    "project_number": "400362370552",
+    "firebase_url": "https://safeouts-297109.firebaseio.com",
+    "project_id": "safeouts-297109",
+    "storage_bucket": "safeouts-297109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400362370552:android:c30e73ffbd7d08ca8e120d",
+        "android_client_info": {
+          "package_name": "com.safeout.customerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400362370552-39b9cj0hdluv8a3v4ii8flg1l98e8smp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "413f97497092e755a1cd54f0bd78c197f425e9bc"
+          }
+        },
+        {
+          "client_id": "400362370552-8m8m67r04eva8lku6dsfhohr5cvm34gt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "b7b21e8cf22e9b5b6102aa3cbc7da44e5699ac3d"
+          }
+        },
+        {
+          "client_id": "400362370552-9to897c3ua3lehv9ba8l4oeflk0r1ocd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "77e5eaa3f77e639d54d6ac806d531c9436a89d71"
+          }
+        },
+        {
+          "client_id": "400362370552-bku2br5536qab3buv3vt4ond3hl2567v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "f28e30523b60ac25ac786c6e31adda7c32934c0a"
+          }
+        },
+        {
+          "client_id": "400362370552-d2p6eoav80v4q7f8tf882t67pkpis6pc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "368a9aa0f8250a26e723e97f9b91d8890049970a"
+          }
+        },
+        {
+          "client_id": "400362370552-d8od7cf4aspv79sj5q7cl3ikdc6janeo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "c1dfbb5ae35940aa1758374fc3a3c1f7b8497c39"
+          }
+        },
+        {
+          "client_id": "400362370552-jdk03cj9ubtj563hfllnhavicv9vt671.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "ec78eadf228e819c345d45f457f311a6cb583589"
+          }
+        },
+        {
+          "client_id": "400362370552-t2v3cvfj3h06pi8c1u32788a6e6rvda3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "cc78adae1a89db7640f09da052e7fca5ef027807"
+          }
+        },
+        {
+          "client_id": "400362370552-ubcjv08b8954k32ihaeuofa5gglhemif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeout.customerapp",
+            "certificate_hash": "eda4a92b1f3a8fddb3d1126c286ed05e4e517134"
+          }
+        },
+        {
+          "client_id": "400362370552-4alat4mi96ep7jkus6q4o4k3biq5bdt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwi2Lr_YFKLSb0W_Y2GJwXc9hq90wUuZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400362370552-4alat4mi96ep7jkus6q4o4k3biq5bdt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400362370552:android:9bc15102a235e75b8e120d",
+        "android_client_info": {
+          "package_name": "com.safeouts.business"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400362370552-06nvd2582v3u9qt4dqg9b0b93m3i8vcv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeouts.business",
+            "certificate_hash": "c1dfbb5ae35940aa1758374fc3a3c1f7b8497c39"
+          }
+        },
+        {
+          "client_id": "400362370552-27n08s8jir3ua56kjjq4j6d525d3mgu8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeouts.business",
+            "certificate_hash": "77e5eaa3f77e639d54d6ac806d531c9436a89d71"
+          }
+        },
+        {
+          "client_id": "400362370552-4gjj2k9rlbn9d0dfu5cen66dm28jhvhn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeouts.business",
+            "certificate_hash": "eda4a92b1f3a8fddb3d1126c286ed05e4e517134"
+          }
+        },
+        {
+          "client_id": "400362370552-5a2d7oaesvc31hbi63ooqcbt41mnovdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeouts.business",
+            "certificate_hash": "eea4c6c0355986cbbdb9477333da49e665adb10f"
+          }
+        },
+        {
+          "client_id": "400362370552-5gsevlrovl5igjfqjqpke1acicd6hrcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeouts.business",
+            "certificate_hash": "508ab6b6b23f2adbe4043b2e22238f2c639b3cc8"
+          }
+        },
+        {
+          "client_id": "400362370552-e71h15d0411bj2nlvb76idtd0atd47ut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeouts.business",
+            "certificate_hash": "f28e30523b60ac25ac786c6e31adda7c32934c0a"
+          }
+        },
+        {
+          "client_id": "400362370552-qpa11qeoljr4shgeqjub7v76dfof8vkf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safeouts.business",
+            "certificate_hash": "f9f469a1e13115e1df7017e8093fe9978a45f224"
+          }
+        },
+        {
+          "client_id": "400362370552-4alat4mi96ep7jkus6q4o4k3biq5bdt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwi2Lr_YFKLSb0W_Y2GJwXc9hq90wUuZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400362370552-4alat4mi96ep7jkus6q4o4k3biq5bdt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400362370552:android:766be05f02116b738e120d",
+        "android_client_info": {
+          "package_name": "com.safeouts.safeouts_business"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400362370552-4alat4mi96ep7jkus6q4o4k3biq5bdt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwi2Lr_YFKLSb0W_Y2GJwXc9hq90wUuZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400362370552-4alat4mi96ep7jkus6q4o4k3biq5bdt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
