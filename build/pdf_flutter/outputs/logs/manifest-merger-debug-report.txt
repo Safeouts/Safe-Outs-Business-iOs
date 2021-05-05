@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml:2:3-37
+		INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml
+		INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml:3:5-67
+	android:name
+		ADDED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml:3:22-64
+uses-sdk
+INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml
+INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml
+		ADDED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml
+		INJECTED from /home/martial/Documents/sdks/flutter/.pub-cache/hosted/pub.dartlang.org/pdf_flutter-1.1.4/android/src/main/AndroidManifest.xml
