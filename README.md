@@ -1,16 +1,5 @@
-# safeouts_business
+# Safe Outs Business
 
-A new Flutter application.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Safe Outs is an innovative app that helps you to show your customers the protective measures you have adopted to keep your customer visit safe.
+Real Time Occupancy: - Show your customer the number of people present on real time basis, helping customer to feel safe to visit your outlet
+Safety Measures: - Show your customer all the Safety measures adopted to keep the customer visit safe
