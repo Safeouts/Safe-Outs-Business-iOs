@@ -126,7 +126,8 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
               Card(
               child:ListTile(
-                onTap: () { _launchReview();
+                onTap: () {
+                  // _launchReview();
                 },
                 leading: Icon(Icons.messenger_outlined,color: Colors.teal),
                 title: Text("Give feedback"),
