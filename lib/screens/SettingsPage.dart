@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:launch_review/launch_review.dart';
-import 'package:pdf_flutter/pdf_flutter.dart';
 import 'package:safeouts_business/screens/FirstScreen.dart';
 import 'package:safeouts_business/screens/editProfile.dart';
 import 'package:safeouts_business/screens/notifications.dart';
 import 'package:safeouts_business/screens/splashscreen.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import 'ActivityPdf.dart';
 
@@ -120,14 +117,17 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
               Card(
               child:ListTile(
-                onTap: () { _launchURL();},
+                onTap: () {
+                  // _launchURL();
+                  },
                 leading: Icon(Icons.verified_user,color: Colors.teal),
                 title: Text("Contact tracing"),
               ),
               ),
               Card(
               child:ListTile(
-                onTap: () { _launchReview();
+                onTap: () {
+                  // _launchReview();
                 },
                 leading: Icon(Icons.messenger_outlined,color: Colors.teal),
                 title: Text("Give feedback"),
@@ -208,26 +208,26 @@ class _SettingsPageState extends State<SettingsPage> {
     );
   }
 
-  _launchURL() async {
-    const url = 'https://github.com/Safeouts/Customer-App/blob/master/Link%20to%20Know%20More%20(1).pdf';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-  _launchPrivacy() async {
-    const url = 'https://github.com/Safeouts/Customer-App/blob/master/PRIVACY_POLICY.md';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-  _launchReview() {
-    LaunchReview.launch(androidAppId: 'com.safeouts.merchant_app_flutter',
-        iOSAppId: 'com.safeouts.merchant_app_flutter');
-  }
+  // _launchURL() async {
+  //   const url = 'https://github.com/Safeouts/Customer-App/blob/master/Link%20to%20Know%20More%20(1).pdf';
+  //   if (await canLaunch(url)) {
+  //     await launch(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // }
+  // _launchPrivacy() async {
+  //   const url = 'https://github.com/Safeouts/Customer-App/blob/master/PRIVACY_POLICY.md';
+  //   if (await canLaunch(url)) {
+  //     await launch(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // }
+  // _launchReview() {
+  //   LaunchReview.launch(androidAppId: 'com.safeouts.merchant_app_flutter',
+  //       iOSAppId: 'com.safeouts.merchant_app_flutter');
+  // }
   _showlogout() {
     showDialog(
       context: context,

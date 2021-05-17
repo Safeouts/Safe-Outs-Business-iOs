@@ -220,6 +220,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400362370552:android:67de681cc8c7f21e8e120d",
+        "android_client_info": {
+          "package_name": "com.safeouts.safeoutsbusiness.ios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400362370552-4alat4mi96ep7jkus6q4o4k3biq5bdt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwi2Lr_YFKLSb0W_Y2GJwXc9hq90wUuZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400362370552-4alat4mi96ep7jkus6q4o4k3biq5bdt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
