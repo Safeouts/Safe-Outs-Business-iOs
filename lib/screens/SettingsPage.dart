@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:launch_review/launch_review.dart';
 import 'package:safeouts_business/screens/FirstScreen.dart';
 import 'package:safeouts_business/screens/editProfile.dart';
 import 'package:safeouts_business/screens/notifications.dart';
@@ -224,10 +223,10 @@ class _SettingsPageState extends State<SettingsPage> {
   //     throw 'Could not launch $url';
   //   }
   // }
-  _launchReview() {
-    LaunchReview.launch(androidAppId: 'com.safeouts.merchant_app_flutter',
-        iOSAppId: 'com.safeouts.merchant_app_flutter');
-  }
+  // _launchReview() {
+  //   LaunchReview.launch(androidAppId: 'com.safeouts.merchant_app_flutter',
+  //       iOSAppId: 'com.safeouts.merchant_app_flutter');
+  // }
   _showlogout() {
     showDialog(
       context: context,

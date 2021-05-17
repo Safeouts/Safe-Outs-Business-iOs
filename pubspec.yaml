@@ -32,7 +32,6 @@ dependencies:
   pin_entry_text_field: ^0.1.4
   image_picker: ^0.6.6+5
   pinput: ^0.2.0
-  launch_review: ^1.0.1
   uuid: ^2.2.2
   cupertino_icons: ^1.0.0
   file_picker: ^1.12.0
