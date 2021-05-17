@@ -40,14 +40,6 @@ class _PDFListBodyState extends State<PDFListBody> {
                 Column(
                   children: <Widget>[
                     Text("PDF.network(url)"),
-                    // PDF.network(
-                    //   'https://google-developer-training.github.io/android-developer-fundamentals-course-concepts/en/android-developer-fundamentals-course-concepts-en.pdf',
-                    //   height:  MediaQuery.of(context).size.height,
-                    //
-                    //   width: MediaQuery.of(context).size.width,
-                    //   placeHolder: Image.asset("assets/images/pdf.png",
-                    //       height: 200, width: 100),
-                    // ),
                   ],
                 ),
                 // localFile != null
